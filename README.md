@@ -69,7 +69,9 @@ Bagian ini mencakup pengerjaan topologi **GNS3** dengan metode *CIDR* (route sum
 
 Beberapa catatan implementasi yang dilakukan pada *cisco packet tracer*:
 
-1. *Router* menggunakan model campuran: **2911** untuk Cyberia & Wired, dan **2811** untuk router lainnya, sesuai dengan gambar topologi yang diberikan. *Interface tambahan* pada 2811 didapat melalui modul `NM-1FE-TX` / `NM-2FE2W`.
+1. Angka dalam tanda kurung pada nama *node* (contoh: `Switch3 [880]`, `Juri [31]`) menunjukkan **jumlah host subnet** yang dilayani *node* tersebut, sesuai dengan kolom *Jumlah IP* pada Spreadsheet (mengikuti `Jumlah host dari soal + jumlah interface router`). *Switch2 [Backbone]* menandai segmen khusus router-to-router (tanpa host), sedangkan subnet `router-router` lainnya (A2, A18–A25) memiliki 0 *host* sehingga tidak diberi label angka.
+
+2. *Router* menggunakan model campuran: **2911** untuk Cyberia & Wired, dan **2811** untuk router lainnya, sesuai dengan gambar topologi yang diberikan. *Interface tambahan* pada 2811 didapat melalui modul `NM-1FE-TX` / `NM-2FE2W`.
 
 2. *Link* Cyberia → Wired → Navi direalisasikan sebagai *port channel* `Vlan1` pada Wired (karena *port SFP* pada `HWIC-1GE-SFP` tidak dapat menerima kabel tembaga pada PT), sehingga IP `192.218.16.45/30` ditanam pada *interface* `Vlan1` dengan *uplink* fisik `FastEthernet0/0/0`.
 
