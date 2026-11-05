@@ -9,7 +9,7 @@
 
 ## Laporan
 
-[LINK SPREADSHEET](https://docs.google.com/spreadsheets/d/1yjMMf0DvgnntdbGa0nB_GigbpK6LO8KM/edit?usp=sharing) — *Subnetting Modul 4 - K14.xlsx* (berkas juga tersedia pada repositori ini)
+[LINK SPREADSHEET](https://docs.google.com/spreadsheets/d/1yjMMf0DvgnntdbGa0nB_GigbpK6LO8KM/edit?usp=sharing&ouid=115244799405066992871&rtpof=true&sd=true) — *Subnetting Modul 4 - K14.xlsx* (berkas juga tersedia pada repositori ini)
 
 ### CPT - VLSM
 
