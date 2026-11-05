@@ -69,7 +69,7 @@ Bagian ini mencakup pengerjaan topologi **GNS3** dengan metode *CIDR* (route sum
 
 Beberapa catatan implementasi yang dilakukan pada *cisco packet tracer*:
 
-1. Angka dalam tanda kurung pada nama *host* (contoh: `Karl (700 host)`, `Reika (53 host)`) menunjukkan **pembagian jumlah host dari soal ke masing-masing *end-point* dalam LAN-nya**, sehingga total label tiap LAN persis sama dengan kolom *Jumlah IP* pada Spreadsheet (contoh: A7 = `Alice (200 host)` + `Reika (53 host)` = 253). *Switch* diberi nama polos, sedangkan subnet *router-to-router* (A2, A15–A25) tidak memiliki *host* sehingga tidak diberi label.
+1. Pada gambar topologi, setiap *subnet* dibingkai *elips* dan diberi label `A## (N)` di atasnya, di mana `N` = jumlah *host* dari soal untuk *subnet* LAN, sedangkan *subnet* segmen *router-to-router* dan *backbone* (A2, A15, A18–A25) diberi jumlah *IP* (2 untuk *link*, 4 untuk A15) karena tidak memiliki *host*. Selanjutnya angka dalam tanda kurung pada nama *host* (contoh: `Karl (700 host)`, `Reika (53 host)`) menunjukkan **pembagian jumlah host dari soal ke masing-masing *end-point* dalam LAN-nya**, sehingga total label tiap LAN persis sama dengan kolom *Jumlah IP* pada Spreadsheet (contoh: A7 = `Alice (200 host)` + `Reika (53 host)` = 253). *Switch* diberi nama polos, sedangkan subnet *router-to-router* tidak memiliki *host* sehingga tidak diberi label angka.
 
 2. *Router* menggunakan model campuran: **2911** untuk Cyberia & Wired, dan **2811** untuk router lainnya, sesuai dengan gambar topologi yang diberikan. *Interface tambahan* pada 2811 didapat melalui modul `NM-1FE-TX` / `NM-2FE2W`.
 
